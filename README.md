@@ -2,7 +2,7 @@
 This is a library for generating Apple Wallet PKPasses.
 
 ## How to use
-This library was heavily inspired by [drallgood's jpasskit library](https://github.com/drallgood/jpasskit) which was written in Java, so the objects and functions are very similar to the ones available on jpasskit.
+This library is a fork of [alvinbaena/passkit](github.com/alvinbaena/passkit) but with some changes, like [go.mozilla.org/pkcs7](https://pkg.go.dev/go.mozilla.org/pkcs7) instead of [github.com/fullsailor/pkcs7](https://pkg.go.dev/github.com/fullsailor/pkcs7). We wait for the original author to merge our [changes](https://github.com/alvinbaena/passkit/pull/9), but until then, we will use this fork.
 
 ### Define a pass
 To define a pass you use the `Pass` struct, which represents the [pass.json](https://developer.apple.com/documentation/walletpasses/pass) file. This struct is modeled as closely as possible to the json file, so adding data is straightforward:
